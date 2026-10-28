@@ -1,0 +1,1453 @@
+{
+ "model": "claude-haiku-5-5",
+ "summary": {
+  "run1": {
+   "fields_exact": 246,
+   "fields_total": 250,
+   "records_all_fields_exact": 22,
+   "invented_values": 1,
+   "refused": 8,
+   "planted_refused": 6,
+   "good_refused": 2,
+   "refused_model_misreads": 2,
+   "refused_but_fully_correct_good": 0,
+   "accepted_with_wrong_field": 0
+  },
+  "run2": {
+   "fields_exact": 246,
+   "fields_total": 250,
+   "records_all_fields_exact": 22,
+   "invented_values": 1,
+   "refused": 8,
+   "planted_refused": 6,
+   "good_refused": 2,
+   "refused_model_misreads": 2,
+   "refused_but_fully_correct_good": 0,
+   "accepted_with_wrong_field": 0
+  },
+  "records_identical_k2": 25,
+  "planted": 6,
+  "truth_verify_refuses_planted": 6,
+  "truth_verify_refuses_good": 0,
+  "usd_pack_total": 0.0158
+ },
+ "rows": [
+  {
+   "i": 0,
+   "note": "Hoi, Gfellstrasse 2, 8002. Hydrant zwei drei acht vier, Oberflur, Graben isch offe, Tiefi öppe 1 Meter 20, Leitig DN 150 Guss. Fotos chömed.",
+   "truth": {
+    "hydrant_nr": "2384",
+    "street": "Gfellstrasse",
+    "house_number": "2",
+    "plz": 8002,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.2,
+    "pipe_dn": 150,
+    "pipe_material": "Guss",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "2384",
+      "street": "Gfellerstrasse",
+      "house_number": "2",
+      "plz": 8002,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.2,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [
+      "street"
+     ],
+     "invented": [],
+     "verify": [
+      "street + house number + PLZ not in Stadt Zuerich address register"
+     ]
+    },
+    {
+     "rec": {
+      "hydrant_nr": "2384",
+      "street": "Gfellerstrasse",
+      "house_number": "2",
+      "plz": 8002,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.2,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [
+      "street"
+     ],
+     "invented": [],
+     "verify": [
+      "street + house number + PLZ not in Stadt Zuerich address register"
+     ]
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "note": "Loogartenstrasse 31b in 8048, hydrant number 2754, Oberflur. Depth 1.10, pipe is PE, DN 125. Year on the plate says 2003.",
+   "truth": {
+    "hydrant_nr": "2754",
+    "street": "Loogartenstrasse",
+    "house_number": "31b",
+    "plz": 8048,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 2003,
+    "depth_m": 1.1,
+    "pipe_dn": 125,
+    "pipe_material": "PE",
+    "date": null
+   },
+   "planted_crew_error": true,
+   "truth_verify": [
+    "hydrant_nr not in Stadt Zuerich hydrant register"
+   ],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "2754",
+      "street": "Loogartenstrasse",
+      "house_number": "31b",
+      "plz": 8048,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2003,
+      "depth_m": 1.1,
+      "pipe_dn": 125,
+      "pipe_material": "PE",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "hydrant_nr not in Stadt Zuerich hydrant register"
+     ]
+    },
+    {
+     "rec": {
+      "hydrant_nr": "2754",
+      "street": "Loogartenstrasse",
+      "house_number": "31b",
+      "plz": 8048,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2003,
+      "depth_m": 1.1,
+      "pipe_dn": 125,
+      "pipe_material": "PE",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "hydrant_nr not in Stadt Zuerich hydrant register"
+     ]
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "note": "Frohburgstrasse 200, PLZ 8057. Hydrant 4337. Mir händ de Hausaschluss freigleit, Tiefi 1.45, DN 100 duktil. Erfasst am 27. Oktober 2026.",
+   "truth": {
+    "hydrant_nr": "4337",
+    "street": "Frohburgstrasse",
+    "house_number": "200",
+    "plz": 8057,
+    "hydrant_type": null,
+    "install_year": null,
+    "depth_m": 1.45,
+    "pipe_dn": 100,
+    "pipe_material": "Duktil",
+    "date": "2026-10-27"
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "4337",
+      "street": "Frohburgstrasse",
+      "house_number": "200",
+      "plz": 8057,
+      "hydrant_type": null,
+      "install_year": null,
+      "depth_m": 1.45,
+      "pipe_dn": 100,
+      "pipe_material": "Duktil",
+      "date": "2026-10-27"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "4337",
+      "street": "Frohburgstrasse",
+      "house_number": "200",
+      "plz": 8057,
+      "hydrant_type": null,
+      "install_year": null,
+      "depth_m": 1.45,
+      "pipe_dn": 100,
+      "pipe_material": "Duktil",
+      "date": "2026-10-27"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "note": "Zellerstrasse 52, 8038 Wollishofen, Oberflurhydrant 5174, verlegt 2019. Graben 1.30 tief, Leitung DN 150, Material Guss.",
+   "truth": {
+    "hydrant_nr": "5174",
+    "street": "Zellerstrasse",
+    "house_number": "52",
+    "plz": 8038,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 2019,
+    "depth_m": 1.3,
+    "pipe_dn": 150,
+    "pipe_material": "Guss",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "5174",
+      "street": "Zellerstrasse",
+      "house_number": "52",
+      "plz": 8038,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2019,
+      "depth_m": 1.3,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "5174",
+      "street": "Zellerstrasse",
+      "house_number": "52",
+      "plz": 8038,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2019,
+      "depth_m": 1.3,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "note": "ok recording, Leutschenbachstrasse 75, 8050, Hydrant drei fünf neun drei. Pipe steel, DN 200, trench depth 1.60. thats it.",
+   "truth": {
+    "hydrant_nr": "3593",
+    "street": "Leutschenbachstrasse",
+    "house_number": "75",
+    "plz": 8050,
+    "hydrant_type": null,
+    "install_year": null,
+    "depth_m": 1.6,
+    "pipe_dn": 200,
+    "pipe_material": "Stahl",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "3539",
+      "street": "Leutschenbachstrasse",
+      "house_number": "75",
+      "plz": 8050,
+      "hydrant_type": null,
+      "install_year": null,
+      "depth_m": 1.6,
+      "pipe_dn": 200,
+      "pipe_material": "Stahl",
+      "date": null
+     },
+     "wrong": [
+      "hydrant_nr"
+     ],
+     "invented": [],
+     "verify": [
+      "hydrant is 3356 m from that address"
+     ]
+    },
+    {
+     "rec": {
+      "hydrant_nr": "3539",
+      "street": "Leutschenbachstrasse",
+      "house_number": "75",
+      "plz": 8050,
+      "hydrant_type": null,
+      "install_year": null,
+      "depth_m": 1.6,
+      "pipe_dn": 200,
+      "pipe_material": "Stahl",
+      "date": null
+     },
+     "wrong": [
+      "hydrant_nr"
+     ],
+     "invented": [],
+     "verify": [
+      "hydrant is 3356 m from that address"
+     ]
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "note": "In Böden 175, 8046. Hydrant 4460, Überflur. Tiefi eis komma füfzg. Leitig PE DN 110.",
+   "truth": {
+    "hydrant_nr": "4460",
+    "street": "In Böden",
+    "house_number": "175",
+    "plz": 8046,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.5,
+    "pipe_dn": 110,
+    "pipe_material": "PE",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "4460",
+      "street": "In Böden",
+      "house_number": "175",
+      "plz": 8046,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.5,
+      "pipe_dn": 110,
+      "pipe_material": "PE",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "4460",
+      "street": "In Böden",
+      "house_number": "175",
+      "plz": 8046,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.5,
+      "pipe_dn": 110,
+      "pipe_material": "PE",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "note": "Meinrad-Lienert-Strasse 4, 8003. Hydrant Nummer 3372, Oberflur, Baujahr 2003. Depth 1.25, DN 150 Guss. Datum 26.10.2026.",
+   "truth": {
+    "hydrant_nr": "3372",
+    "street": "Meinrad-Lienert-Strasse",
+    "house_number": "4",
+    "plz": 8003,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 2003,
+    "depth_m": 1.25,
+    "pipe_dn": 150,
+    "pipe_material": "Guss",
+    "date": "2026-10-26"
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "3372",
+      "street": "Meinrad-Lienert-Strasse",
+      "house_number": "4",
+      "plz": 8003,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2003,
+      "depth_m": 1.25,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": "2026-10-26"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "3372",
+      "street": "Meinrad-Lienert-Strasse",
+      "house_number": "4",
+      "plz": 8003,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2003,
+      "depth_m": 1.25,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": "2026-10-26"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "note": "Mühlebachstrasse 185, 8008. Hydrant 5789, nagelneu, Oberflur. Tiefi 1.40, DN 125 duktil.",
+   "truth": {
+    "hydrant_nr": "5789",
+    "street": "Mühlebachstrasse",
+    "house_number": "185",
+    "plz": 8008,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.4,
+    "pipe_dn": 125,
+    "pipe_material": "Duktil",
+    "date": null
+   },
+   "planted_crew_error": true,
+   "truth_verify": [
+    "hydrant is 8311 m from that address"
+   ],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "5789",
+      "street": "Mühlebachstrasse",
+      "house_number": "185",
+      "plz": 8008,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.4,
+      "pipe_dn": 125,
+      "pipe_material": "Duktil",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "hydrant is 8311 m from that address"
+     ]
+    },
+    {
+     "rec": {
+      "hydrant_nr": "5789",
+      "street": "Mühlebachstrasse",
+      "house_number": "185",
+      "plz": 8008,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.4,
+      "pipe_dn": 125,
+      "pipe_material": "Duktil",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "hydrant is 8311 m from that address"
+     ]
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "note": "Riedhofstrasse 86, 8049 Höngg. Hydrant 1581. Leitung Guss DN 100, Graben 1.15 tief. Hydrant is from 1988 according to the plate.",
+   "truth": {
+    "hydrant_nr": "1581",
+    "street": "Riedhofstrasse",
+    "house_number": "86",
+    "plz": 8049,
+    "hydrant_type": null,
+    "install_year": 1988,
+    "depth_m": 1.15,
+    "pipe_dn": 100,
+    "pipe_material": "Guss",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "1581",
+      "street": "Riedhofstrasse",
+      "house_number": "86",
+      "plz": 8049,
+      "hydrant_type": null,
+      "install_year": 1988,
+      "depth_m": 1.15,
+      "pipe_dn": 100,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "1581",
+      "street": "Riedhofstrasse",
+      "house_number": "86",
+      "plz": 8049,
+      "hydrant_type": null,
+      "install_year": 1988,
+      "depth_m": 1.15,
+      "pipe_dn": 100,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 9,
+   "note": "Auhofstrasse 1, 8051, Hydrant 859, Oberflur. Tiefi 1.35. Material weiss ich nöd, DN 150.",
+   "truth": {
+    "hydrant_nr": "859",
+    "street": "Auhofstrasse",
+    "house_number": "1",
+    "plz": 8051,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.35,
+    "pipe_dn": 150,
+    "pipe_material": null,
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "859",
+      "street": "Auhofstrasse",
+      "house_number": "1",
+      "plz": 8051,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.35,
+      "pipe_dn": 150,
+      "pipe_material": null,
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "859",
+      "street": "Auhofstrasse",
+      "house_number": "1",
+      "plz": 8051,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.35,
+      "pipe_dn": 150,
+      "pipe_material": null,
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 10,
+   "note": "Pflanzschulstrasse 17, 8004, hydrant 4200, Oberflurhydrant, laid 2011. Trench 1.20, PE DN 160. Captured 25 October 2026.",
+   "truth": {
+    "hydrant_nr": "4200",
+    "street": "Pflanzschulstrasse",
+    "house_number": "17",
+    "plz": 8004,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 2011,
+    "depth_m": 1.2,
+    "pipe_dn": 160,
+    "pipe_material": "PE",
+    "date": "2026-10-25"
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "4200",
+      "street": "Pflanzschulstrasse",
+      "house_number": "17",
+      "plz": 8004,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2011,
+      "depth_m": 1.2,
+      "pipe_dn": 160,
+      "pipe_material": "PE",
+      "date": "2026-10-25"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "4200",
+      "street": "Pflanzschulstrasse",
+      "house_number": "17",
+      "plz": 8004,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2011,
+      "depth_m": 1.2,
+      "pipe_dn": 160,
+      "pipe_material": "PE",
+      "date": "2026-10-25"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 11,
+   "note": "Kanzleistrasse 411, 8004. Hydrant 4248, Oberflur. Tiefi 1.50, DN 150 Guss.",
+   "truth": {
+    "hydrant_nr": "4248",
+    "street": "Kanzleistrasse",
+    "house_number": "411",
+    "plz": 8004,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.5,
+    "pipe_dn": 150,
+    "pipe_material": "Guss",
+    "date": null
+   },
+   "planted_crew_error": true,
+   "truth_verify": [
+    "street + house number + PLZ not in Stadt Zuerich address register"
+   ],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "4248",
+      "street": "Kanzleistrasse",
+      "house_number": "411",
+      "plz": 8004,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.5,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "street + house number + PLZ not in Stadt Zuerich address register"
+     ]
+    },
+    {
+     "rec": {
+      "hydrant_nr": "4248",
+      "street": "Kanzleistrasse",
+      "house_number": "411",
+      "plz": 8004,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.5,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "street + house number + PLZ not in Stadt Zuerich address register"
+     ]
+    }
+   ]
+  },
+  {
+   "i": 12,
+   "note": "Hohlstrasse 176, 8004. Hydrant füf drei sibe. Leitig Stahl DN 200, Tiefi 1.70. Verlegt 2004.",
+   "truth": {
+    "hydrant_nr": "537",
+    "street": "Hohlstrasse",
+    "house_number": "176",
+    "plz": 8004,
+    "hydrant_type": null,
+    "install_year": 2004,
+    "depth_m": 1.7,
+    "pipe_dn": 200,
+    "pipe_material": "Stahl",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "537",
+      "street": "Hohlstrasse",
+      "house_number": "176",
+      "plz": 8004,
+      "hydrant_type": null,
+      "install_year": 2004,
+      "depth_m": 1.7,
+      "pipe_dn": 200,
+      "pipe_material": "Stahl",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "537",
+      "street": "Hohlstrasse",
+      "house_number": "176",
+      "plz": 8004,
+      "hydrant_type": null,
+      "install_year": 2004,
+      "depth_m": 1.7,
+      "pipe_dn": 200,
+      "pipe_material": "Stahl",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 13,
+   "note": "Enzenbühlstrasse 74, 8008, Hydrant 1152, Oberflur. DN 100, Guss, Tiefe 1.05 Meter.",
+   "truth": {
+    "hydrant_nr": "1152",
+    "street": "Enzenbühlstrasse",
+    "house_number": "74",
+    "plz": 8008,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.05,
+    "pipe_dn": 100,
+    "pipe_material": "Guss",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "1152",
+      "street": "Enzenbühlstrasse",
+      "house_number": "74",
+      "plz": 8008,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.05,
+      "pipe_dn": 100,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "1152",
+      "street": "Enzenbühlstrasse",
+      "house_number": "74",
+      "plz": 8008,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.05,
+      "pipe_dn": 100,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 14,
+   "note": "Entlisbergweg 5, 8041, hydrant 3279. depth 1.30, PE pipe DN 125. date 24.10.2026.",
+   "truth": {
+    "hydrant_nr": "3279",
+    "street": "Entlisbergweg",
+    "house_number": "5",
+    "plz": 8041,
+    "hydrant_type": null,
+    "install_year": null,
+    "depth_m": 1.3,
+    "pipe_dn": 125,
+    "pipe_material": "PE",
+    "date": "2026-10-24"
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "3279",
+      "street": "Entlisbergweg",
+      "house_number": "5",
+      "plz": 8041,
+      "hydrant_type": null,
+      "install_year": null,
+      "depth_m": 1.3,
+      "pipe_dn": 125,
+      "pipe_material": "PE",
+      "date": "2026-10-24"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "3279",
+      "street": "Entlisbergweg",
+      "house_number": "5",
+      "plz": 8041,
+      "hydrant_type": null,
+      "install_year": null,
+      "depth_m": 1.3,
+      "pipe_dn": 125,
+      "pipe_material": "PE",
+      "date": "2026-10-24"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 15,
+   "note": "Feusisbergli 23, 8048. Oberflurhydrant 2749, Baujahr 2003. Graben 1.20, Leitig duktil DN 150.",
+   "truth": {
+    "hydrant_nr": "2749",
+    "street": "Feusisbergli",
+    "house_number": "23",
+    "plz": 8048,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 2003,
+    "depth_m": 1.2,
+    "pipe_dn": 150,
+    "pipe_material": "Duktil",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "2749",
+      "street": "Feusisbergli",
+      "house_number": "23",
+      "plz": 8048,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2003,
+      "depth_m": 1.2,
+      "pipe_dn": 150,
+      "pipe_material": "Duktil",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "2749",
+      "street": "Feusisbergli",
+      "house_number": "23",
+      "plz": 8048,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2003,
+      "depth_m": 1.2,
+      "pipe_dn": 150,
+      "pipe_material": "Duktil",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 16,
+   "note": "Birchstrasse 251, 8052, Hydrant 5382, Oberflur. Tiefi 1.55, DN 200 duktil. Verlegt 2020.",
+   "truth": {
+    "hydrant_nr": "5382",
+    "street": "Birchstrasse",
+    "house_number": "251",
+    "plz": 8052,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 2020,
+    "depth_m": 1.55,
+    "pipe_dn": 200,
+    "pipe_material": "Duktil",
+    "date": null
+   },
+   "planted_crew_error": true,
+   "truth_verify": [
+    "hydrant is 4909 m from that address",
+    "install_year 2020 but register says 2021"
+   ],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "5382",
+      "street": "Birchstrasse",
+      "house_number": "251",
+      "plz": 8052,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2020,
+      "depth_m": 1.55,
+      "pipe_dn": 200,
+      "pipe_material": "Duktil",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "hydrant is 4909 m from that address",
+      "install_year 2020 but register says 2021"
+     ]
+    },
+    {
+     "rec": {
+      "hydrant_nr": "5382",
+      "street": "Birchstrasse",
+      "house_number": "251",
+      "plz": 8052,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2020,
+      "depth_m": 1.55,
+      "pipe_dn": 200,
+      "pipe_material": "Duktil",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "hydrant is 4909 m from that address",
+      "install_year 2020 but register says 2021"
+     ]
+    }
+   ]
+  },
+  {
+   "i": 17,
+   "note": "Seefeldstrasse 149, 8008. Hydrant 3782, Oberflur. Pipe cast iron, DN 150, depth 1.40.",
+   "truth": {
+    "hydrant_nr": "3782",
+    "street": "Seefeldstrasse",
+    "house_number": "149",
+    "plz": 8008,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.4,
+    "pipe_dn": 150,
+    "pipe_material": "Guss",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "3782",
+      "street": "Seefeldstrasse",
+      "house_number": "149",
+      "plz": 8008,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.4,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "3782",
+      "street": "Seefeldstrasse",
+      "house_number": "149",
+      "plz": 8008,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.4,
+      "pipe_dn": 150,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 18,
+   "note": "Pfingstweidstrasse 10, 8005. Hydrant vier null füf füf. Leitung PE DN 160, Graben 1.25. Hydrant isch vo 2010.",
+   "truth": {
+    "hydrant_nr": "4055",
+    "street": "Pfingstweidstrasse",
+    "house_number": "10",
+    "plz": 8005,
+    "hydrant_type": null,
+    "install_year": 2010,
+    "depth_m": 1.25,
+    "pipe_dn": 160,
+    "pipe_material": "PE",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "4055",
+      "street": "Pfingstweidstrasse",
+      "house_number": "10",
+      "plz": 8005,
+      "hydrant_type": null,
+      "install_year": 2010,
+      "depth_m": 1.25,
+      "pipe_dn": 160,
+      "pipe_material": "PE",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "4055",
+      "street": "Pfingstweidstrasse",
+      "house_number": "10",
+      "plz": 8005,
+      "hydrant_type": null,
+      "install_year": 2010,
+      "depth_m": 1.25,
+      "pipe_dn": 160,
+      "pipe_material": "PE",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 19,
+   "note": "Letzistrasse 91, 8006, Hydrant 2012, Oberflur. Tiefi 1.10, Guss DN 100.",
+   "truth": {
+    "hydrant_nr": "2012",
+    "street": "Letzistrasse",
+    "house_number": "91",
+    "plz": 8006,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.1,
+    "pipe_dn": 100,
+    "pipe_material": "Guss",
+    "date": null
+   },
+   "planted_crew_error": true,
+   "truth_verify": [
+    "street + house number + PLZ not in Stadt Zuerich address register"
+   ],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": null,
+      "street": "Letzistrasse",
+      "house_number": "91",
+      "plz": 8006,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2012,
+      "depth_m": 1.1,
+      "pipe_dn": 100,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [
+      "hydrant_nr",
+      "install_year"
+     ],
+     "invented": [
+      "install_year"
+     ],
+     "verify": [
+      "hydrant_nr not in Stadt Zuerich hydrant register",
+      "street + house number + PLZ not in Stadt Zuerich address register"
+     ]
+    },
+    {
+     "rec": {
+      "hydrant_nr": null,
+      "street": "Letzistrasse",
+      "house_number": "91",
+      "plz": 8006,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 2012,
+      "depth_m": 1.1,
+      "pipe_dn": 100,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [
+      "hydrant_nr",
+      "install_year"
+     ],
+     "invented": [
+      "install_year"
+     ],
+     "verify": [
+      "hydrant_nr not in Stadt Zuerich hydrant register",
+      "street + house number + PLZ not in Stadt Zuerich address register"
+     ]
+    }
+   ]
+  },
+  {
+   "i": 20,
+   "note": "Keltenstrasse 28, 8044. Hydrant 2076, Oberflur, 1993. DN 125 Guss, depth 1.35. Erfasst 23.10.2026.",
+   "truth": {
+    "hydrant_nr": "2076",
+    "street": "Keltenstrasse",
+    "house_number": "28",
+    "plz": 8044,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 1993,
+    "depth_m": 1.35,
+    "pipe_dn": 125,
+    "pipe_material": "Guss",
+    "date": "2026-10-23"
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "2076",
+      "street": "Keltenstrasse",
+      "house_number": "28",
+      "plz": 8044,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 1993,
+      "depth_m": 1.35,
+      "pipe_dn": 125,
+      "pipe_material": "Guss",
+      "date": "2026-10-23"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "2076",
+      "street": "Keltenstrasse",
+      "house_number": "28",
+      "plz": 8044,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 1993,
+      "depth_m": 1.35,
+      "pipe_dn": 125,
+      "pipe_material": "Guss",
+      "date": "2026-10-23"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 21,
+   "note": "Farenweg 9, 8038. Hydrant 4657. Tiefi 1.20, PE DN 110. Fotos vo Muffe und Hausiifüehrig.",
+   "truth": {
+    "hydrant_nr": "4657",
+    "street": "Farenweg",
+    "house_number": "9",
+    "plz": 8038,
+    "hydrant_type": null,
+    "install_year": null,
+    "depth_m": 1.2,
+    "pipe_dn": 110,
+    "pipe_material": "PE",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "4657",
+      "street": "Farenweg",
+      "house_number": "9",
+      "plz": 8038,
+      "hydrant_type": null,
+      "install_year": null,
+      "depth_m": 1.2,
+      "pipe_dn": 110,
+      "pipe_material": "PE",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "4657",
+      "street": "Farenweg",
+      "house_number": "9",
+      "plz": 8038,
+      "hydrant_type": null,
+      "install_year": null,
+      "depth_m": 1.2,
+      "pipe_dn": 110,
+      "pipe_material": "PE",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 22,
+   "note": "Tramstrasse 87a, 8050, hydrant 1842, Oberflur, from 1986. Steel DN 150, trench 1.65.",
+   "truth": {
+    "hydrant_nr": "1842",
+    "street": "Tramstrasse",
+    "house_number": "87a",
+    "plz": 8050,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 1986,
+    "depth_m": 1.65,
+    "pipe_dn": 150,
+    "pipe_material": "Stahl",
+    "date": null
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "1842",
+      "street": "Tramstrasse",
+      "house_number": "87a",
+      "plz": 8050,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 1986,
+      "depth_m": 1.65,
+      "pipe_dn": 150,
+      "pipe_material": "Stahl",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "1842",
+      "street": "Tramstrasse",
+      "house_number": "87a",
+      "plz": 8050,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 1986,
+      "depth_m": 1.65,
+      "pipe_dn": 150,
+      "pipe_material": "Stahl",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  },
+  {
+   "i": 23,
+   "note": "Zehntenhausstrasse 110, 8046. Hydrant 718, Oberflur. Tiefi 1.30, DN 100 Guss.",
+   "truth": {
+    "hydrant_nr": "718",
+    "street": "Zehntenhausstrasse",
+    "house_number": "110",
+    "plz": 8046,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": null,
+    "depth_m": 1.3,
+    "pipe_dn": 100,
+    "pipe_material": "Guss",
+    "date": null
+   },
+   "planted_crew_error": true,
+   "truth_verify": [
+    "hydrant_nr not in Stadt Zuerich hydrant register"
+   ],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "718",
+      "street": "Zehntenhausstrasse",
+      "house_number": "110",
+      "plz": 8046,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.3,
+      "pipe_dn": 100,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "hydrant_nr not in Stadt Zuerich hydrant register"
+     ]
+    },
+    {
+     "rec": {
+      "hydrant_nr": "718",
+      "street": "Zehntenhausstrasse",
+      "house_number": "110",
+      "plz": 8046,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": null,
+      "depth_m": 1.3,
+      "pipe_dn": 100,
+      "pipe_material": "Guss",
+      "date": null
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": [
+      "hydrant_nr not in Stadt Zuerich hydrant register"
+     ]
+    }
+   ]
+  },
+  {
+   "i": 24,
+   "note": "Kilchbergstrasse 39, 8038. Hydrant 2435, Oberflurhydrant, verlegt 1999. DN 150 duktil, Tiefi 1.40. Datum 22.10.2026.",
+   "truth": {
+    "hydrant_nr": "2435",
+    "street": "Kilchbergstrasse",
+    "house_number": "39",
+    "plz": 8038,
+    "hydrant_type": "Oberflurhydrant",
+    "install_year": 1999,
+    "depth_m": 1.4,
+    "pipe_dn": 150,
+    "pipe_material": "Duktil",
+    "date": "2026-10-22"
+   },
+   "planted_crew_error": false,
+   "truth_verify": [],
+   "runs": [
+    {
+     "rec": {
+      "hydrant_nr": "2435",
+      "street": "Kilchbergstrasse",
+      "house_number": "39",
+      "plz": 8038,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 1999,
+      "depth_m": 1.4,
+      "pipe_dn": 150,
+      "pipe_material": "Duktil",
+      "date": "2026-10-22"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    },
+    {
+     "rec": {
+      "hydrant_nr": "2435",
+      "street": "Kilchbergstrasse",
+      "house_number": "39",
+      "plz": 8038,
+      "hydrant_type": "Oberflurhydrant",
+      "install_year": 1999,
+      "depth_m": 1.4,
+      "pipe_dn": 150,
+      "pipe_material": "Duktil",
+      "date": "2026-10-22"
+     },
+     "wrong": [],
+     "invented": [],
+     "verify": []
+    }
+   ]
+  }
+ ]
+}
